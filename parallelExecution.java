@@ -93,7 +93,7 @@ public class parallelExecution implements Runnable {
         Runnable r1 = new parallelExecution("4723", "NE1GAD56C2900337"); //device id of first mobile device
         Runnable r2 = new parallelExecution("5000", "NE1GAP1730300615"); //device id of second mobile device
        new Thread(r1).start();
-       //((parallelExecution) r1).dialContact();
+       ((parallelExecution) r1).dialContact();
        
      
         new Thread(r2).start();
